@@ -1138,13 +1138,13 @@ class AircraftSFX:
 
 	def start_engine(self, main):
 		self.turbine_settings.volume = 0
-		self.turbine_settings.pitch = 1
+		self.turbine_settings.pitch = 0#1
 		self.air_settings.volume = 0
 		self.pc_settings.volume = 0
 		self.air_chan = main.audio.Start(main.audio.LoadSound("assets/sfx/air.wav"), self.air_settings)
 		self.turbine_chan = main.audio.Start(main.audio.LoadSound("assets/sfx/turbine.wav"), self.turbine_settings)
 		self.pc_chan = main.audio.Start(main.audio.LoadSound("assets/sfx/post_combustion.wav"), self.pc_settings)
-		self.start = True
+		self.start = False#True
 		self.pc_started = False
 		self.pc_stopped = True
 		if self.wind_chan > 0:
@@ -1152,7 +1152,7 @@ class AircraftSFX:
 
 	def stop_engine(self, main):
 		self.turbine_settings.volume = 0
-		self.turbine_settings.pitch = 1
+		self.turbine_settings.pitch = 0#1
 		self.air_settings.volume = 0
 		self.pc_settings.volume = 0
 		main.audio.Stop(self.turbine_chan)

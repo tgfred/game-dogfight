@@ -1008,7 +1008,7 @@ def start_music(filename):
 	Main.title_music_settings = hg.MixerChannelState()
 	Main.title_music_settings.loop_mode = hg.MixerRepeat
 	Main.title_music_settings.volume = 1
-	Main.title_music_settings.pitch = 1
+	Main.title_music_settings.pitch = 0#1
 	Main.title_music = Main.audio.Start(music, Main.title_music_settings)
 
 

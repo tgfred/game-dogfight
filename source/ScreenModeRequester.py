@@ -50,7 +50,7 @@ def gui_ScreenModeRequester():
 					current_monitor = i
 			hg.ImGuiEndCombo()
 
-		if hg.ImGuiBeginCombo("Screen size", modes[current_monitor][current_mode].name):
+		'''if hg.ImGuiBeginCombo("Screen size", modes[current_monitor][current_mode].name):
 			for i in range(len(modes[current_monitor])):
 				f = hg.ImGuiSelectable(modes[current_monitor][i].name+"##"+str(i), current_mode == i)
 				if f:
@@ -59,8 +59,9 @@ def gui_ScreenModeRequester():
 
 		f, d = hg.ImGuiCheckbox("Windowed", flag_windowed)
 		if f:
-			flag_windowed = d
-
+			flag_windowed = d'''
+		current_mode = 27
+		flag_windowed = True
 		ok=hg.ImGuiButton("Ok")
 		hg.ImGuiSameLine()
 		cancel=hg.ImGuiButton("Quit")
