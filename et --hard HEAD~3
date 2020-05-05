@@ -1,0 +1,44 @@
+[33m190555d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m .
+[33m8b67dc0[m Revert "0505"
+[33m2c1259f[m 0505
+[33m24297e9[m .
+[33me582731[m 關聲音
+[33mff5ecad[m 關掉聲音 固定解析度跟視窗
+[33ma7cffb3[m Create 啟動.bat
+[33md84b7b7[m Added a project root file.
+[33m8b1e158[m Merge pull request #3 from harfang3d/HARFANG_1_02_fix
+[33m0d52663[m Fix for Harfang 1.02
+[33md702d0e[m Update screen mode requester
+[33m422213b[m Merge pull request #2 from harfang3d/HARFANG_1_01_fix
+[33mab28d60[m update game settings (radial blur)
+[33m537aaa6[m Remove ipywidgets
+[33m8ff789d[m update
+[33m7bbdb7a[m Add mouse cursor in Gui edit mode (F12)
+[33ma21ccff[m update screen mod requester (ratio modes filter)
+[33m49cce1e[m Add screen mode requester
+[33m6659f99[m Fix some views transitions glitchs
+[33m5d9c285[m Update find_device() function (test in lower case)
+[33md4f4b41[m File names cases checkup for Linux
+[33mefd15fa[m Pad test for Linux
+[33medba184[m Delete obsolete classe "RenderToTexture" Delete custom rendering
+[33mc597e9e[m Radial blur added on acceleration / deceleration
+[33ma1e51da[m Replaced custom HSV post process by official HSLPostProcess MotionBlur WIP
+[33m5a9938b[m[33m ([m[1;31morigin/Post_rendering_optimisation[m[33m)[m update
+[33m025256f[m Clouds V2 (wind movements + morph)
+[33m9829b1f[m Update
+[33mceda6f5[m Merge branch 'master' of https://github.com/harfang3d/game-dogfight
+[33md68d4a9[m update Space to tabs
+[33m994b444[m Fixed issue #1 caused by a call to LoadGeometry using an obsolete syntax.
+[33m99ce118[m Updated the installation instructions.
+[33m68cd585[m Update Added source files
+[33m8defd47[m Added minimalist 'how to run' instructions.
+[33m56bbcf0[m Updated the video player thumbnail.
+[33macac436[m Added a link to a video capture of the game (Youtube).
+[33mab1fe70[m Linked the 800x600 screenshots in the readme file.
+[33mb1bdf46[m Link test in the readme file.
+[33me5b6225[m Linked the screenshots to the readme file.
+[33mb7f2a5b[m Linked the screenshots to the readme file.
+[33m9fdb352[m Linked the screenshots to the readme file.
+[33md8a79d7[m Added a series of screenshots.
+[33ma724a12[m Updated the readme & license files.
+[33m0bebea1[m Initial commit
