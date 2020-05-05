@@ -31,8 +31,8 @@ from ScreenModeRequester import *
 # =====================================================================================================
 
 class Main:
-    resolution = hg.Vector2(600, 900)
-    antialiasing = 4
+    resolution = hg.Vector2(1600, 900)
+    antialiasing = 2
     screenMode = hg.FullscreenMonitor1
 
     main_node = hg.Node()
@@ -1151,11 +1151,11 @@ def init_start_phase():
     Main.p2_sfx.stop_engine(Main)
 
     load_fps_matrix(Main.fps)
-    # ...or Camera 不動畫
-    '''camera = Main.scene.GetNode("Camera")
+    # ...or Camera
+    camera = Main.scene.GetNode("Camera")
     pos, rot = load_json_matrix("assets/scripts/camera_position.json")
     camera.GetTransform().SetPosition(pos)
-    camera.GetTransform().SetRotation(rot)'''
+    camera.GetTransform().SetRotation(rot)
 
     # pos, rot = load_json_matrix("assets/scripts/aircraft_position.json")
     pos, rot = Main.carrier.get_aircraft_start_point()
@@ -1490,7 +1490,7 @@ def init_end_phase():
 
     Main.RadialBlur_postProcess.SetStrength(0)
 
-    return init_start_phase()  # end_phase 直接重開
+    return end_phase
 
 
 def end_phase(plus, delta_t):
@@ -1522,7 +1522,7 @@ def end_phase(plus, delta_t):
     Main.p2_aircraft.update_kinetics(Main.scene, dts)
 
     # Hud
-    '''
+
     f = Main.HSL_postProcess.GetL()
     plus.Text2D(x * Main.resolution.x, 611 / 900 * Main.resolution.y, msg, s * Main.resolution.y,
                 hg.Color(1., 0.9, 0.3, 1) * f)
@@ -1530,7 +1530,7 @@ def end_phase(plus, delta_t):
     plus.Text2D(645 / 1600 * Main.resolution.x, 531 / 900 * Main.resolution.y, "Hit Space or Start",
                 0.025 * Main.resolution.y,
                 hg.Color(1, 1, 1, (1 + sin(hg.time_to_sec_f(plus.GetClock() * 10))) * 0.5) * f)
-    '''
+
     # SFX:
     Main.p1_sfx.update_sfx(Main, dts)
     Main.p2_sfx.update_sfx(Main, dts)
